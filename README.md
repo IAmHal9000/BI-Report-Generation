@@ -1,12 +1,12 @@
-### BI Report Generation
+# BI Report Generation
 
 This project generates BI (Business Intelligence) reports from CSV data files based on configurations provided in JSON format. It includes functionalities to load data, perform data merging, generate plots, and visualize insights.
 
-# Project Structure
+## Project Structure
 
 The project consists of the following main components:
 
-# Main Scripts:
+## Main Scripts:
 
 main.py: Entry point of the application. It orchestrates the loading of configurations, data files, data merging, and plot generation.
 data_loader.py: Module responsible for loading CSV files from a specified directory and merging dataframes based on configuration.
@@ -25,7 +25,7 @@ Getting Started
 
 To run the project locally, follow these steps:
 
-Prerequisites
+## Prerequisites
 Python 3.x installed on your system.
 Required Python packages installed. You can install them using pip:
 Copy code
@@ -42,29 +42,29 @@ Ensure your dataset folder (dataset/) contains the necessary CSV files (orders.c
 Running the Project
 Navigate to the project directory containing main.py.
 
-Run the project:
+## Run the project:
 
 css
 Copy code
 python main.py
 The script will iterate through each report configuration file (*.json) in report_conf/, load the specified datasets, perform data merging, generate plots, and save them as specified in each report configuration.
 
-Configuration
+## Configuration
 config.json: Modify this file to specify the directory path, file type, required files, data keys, merge configurations, and plot configurations.
 
 Report Configuration Files (*.json): Each JSON file in report_conf/ defines a specific report configuration, including which datasets to use (df1, df2), how to merge them, and what plots to generate.
 
-Troubleshooting
+## Troubleshooting
 
 Missing Files: Ensure all required CSV files are present in the dataset/ directory.
 
 Key Errors: If you encounter KeyError: 'number_of_orders', check the column names in your merged DataFrame (report_data). Adjust the merge operation in merge_dataframes() in data_loader.py if necessary.
 
-Contributing
+## Contributing
 
 Contributions are welcome! If you find any bugs or have suggestions for improvement, please submit an issue or a pull request.
 
-License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
