@@ -8,19 +8,27 @@ The project consists of the following main components:
 
 ### Main Scripts:
 
-main.py: Entry point of the application. It orchestrates the loading of configurations, data files, data merging, and plot generation.
+#### main.py: 
+
+Entry point of the application. It orchestrates the loading of configurations, data files, data merging, and plot generation.
 data_loader.py: Module responsible for loading CSV files from a specified directory and merging dataframes based on configuration.
 plot_generator.py: Module containing functions to generate various types of plots (bar plots, scatter plots, histograms) based on provided data and plot configurations.
 data_plotter.py: Module with plotting functions (plot_bar, plot_scatter, plot_histogram) used by plot_generator.py.
 Configuration Files:
 
-### config.json: JSON configuration file specifying directory paths, file types, required files, data keys, merge configurations, and plot configurations.
+#### config.json: 
+
+JSON configuration file specifying directory paths, file types, required files, data keys, merge configurations, and plot configurations.
 Report Configuration:
 
-### report_conf/: Directory containing JSON files that specify individual report configurations. Each JSON file defines how data should be processed, merged, and plotted.
+#### report_conf/: 
+
+Directory containing JSON files that specify individual report configurations. Each JSON file defines how data should be processed, merged, and plotted.
 Dataset:
 
-### dataset/: Directory where CSV data files (orders.csv, customers.csv, etc.) are stored. These files contain the raw data used for generating reports.
+#### dataset/: 
+
+Directory where CSV data files (orders.csv, customers.csv, etc.) are stored. These files contain the raw data used for generating reports.
 Getting Started
 
 To run the project locally, follow these steps:
