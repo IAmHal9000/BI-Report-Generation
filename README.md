@@ -2,7 +2,7 @@
 
 This project generates BI (Business Intelligence) reports from CSV data files based on configurations provided in JSON format. It includes functionalities to load data, perform data merging, generate plots, and visualize insights.
 
-## Project Structure
+# Project Structure
 
 The project consists of the following main components:
 
